@@ -88,7 +88,9 @@ int main(void)
     SPI_Init();
     MX25L8006E_Init();
     
-    MX25L8006E_TEST1();  
+	MX25L8006E_TEST1();
+	//MX25L8006E_TEST2();
+    //MX25L8006E_TEST3();  
     
     /* Add your application code here
      */
@@ -96,7 +98,7 @@ int main(void)
     /* Infinite loop */
     while (1)
     {
-        KEY_SCAN();
+        
     }
 }
 

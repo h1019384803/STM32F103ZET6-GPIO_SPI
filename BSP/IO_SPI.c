@@ -44,6 +44,9 @@ void SPI_Init(void)
     
 #endif
 
+
+	HAL_Delay(100);//上电延时一段时间
+
 }
 
 /*******************************************************************************
@@ -98,11 +101,11 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
             
         TX_DAT <<= 1;    
         
-        SPI_DELAY(100);
+        SPI_DELAY(_SPI_DELAY_);
                 
         SPI_CLK(1);
 
-        SPI_DELAY(100);
+        SPI_DELAY(_SPI_DELAY_);
         
         RX_DAT <<= 1;
     
@@ -139,11 +142,11 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
 
         TX_DAT <<= 1;    
         
-        SPI_DELAY(100);
+        SPI_DELAY(_SPI_DELAY_);
         
         SPI_CLK(0);
 
-        SPI_DELAY(100);
+        SPI_DELAY(_SPI_DELAY_);
 
         RX_DAT <<= 1;
     
@@ -178,11 +181,11 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
 
         TX_DAT <<= 1;    
     
-        SPI_DELAY(100);
+        SPI_DELAY(_SPI_DELAY_);
     
         SPI_CLK(0);
         
-        SPI_DELAY(100); 
+        SPI_DELAY(_SPI_DELAY_); 
 
         RX_DAT <<= 1;
     
@@ -219,11 +222,11 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
 
         TX_DAT <<= 1;    
    
-        SPI_DELAY(100);
+        SPI_DELAY(_SPI_DELAY_);
     
         SPI_CLK(1);
 
-        SPI_DELAY(100);
+        SPI_DELAY(_SPI_DELAY_);
 
         RX_DAT <<= 1;
     

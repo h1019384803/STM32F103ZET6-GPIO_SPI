@@ -176,9 +176,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>329</LineNumber>
+          <LineNumber>436</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134222760</Address>
+          <Address>134222934</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -187,59 +187,99 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>E:\鍗氬鍥?STM32F103ZET6\STM32F103ZET6_IO_SPI\BSP\MX25L8006E.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\STM32F103ZET6_PRO\../BSP/MX25L8006E.c\329</Expression>
+          <Expression>\\STM32F103ZET6_PRO\../BSP/MX25L8006E.c\436</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>RCC</ItemText>
+          <ItemText>MX25_BUFF</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>BKP</ItemText>
+          <ItemText>MX_TABLE,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>PWR</ItemText>
+          <ItemText>status</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>RTC</ItemText>
+          <ItemText>*Buffer</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ID0</ItemText>
+          <ItemText>sec_num,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>5</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ID1</ItemText>
+          <ItemText>sec_addr,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>6</count>
           <WinNumber>1</WinNumber>
-          <ItemText>ID2,0x10</ItemText>
+          <ItemText>sec_remain,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>7</count>
           <WinNumber>1</WinNumber>
-          <ItemText>temp</ItemText>
+          <ItemText>Len,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>8</count>
           <WinNumber>1</WinNumber>
-          <ItemText>MX25_BUFF</ItemText>
+          <ItemText>MX25_SECTOR</ItemText>
         </Ww>
         <Ww>
           <count>9</count>
           <WinNumber>1</WinNumber>
-          <ItemText>FLASH_DATA</ItemText>
+          <ItemText>i</ItemText>
+        </Ww>
+        <Ww>
+          <count>10</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>i,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>11</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Pioter</ItemText>
+        </Ww>
+        <Ww>
+          <count>12</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>address,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>13</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>RX_BUFF</ItemText>
+        </Ww>
+        <Ww>
+          <count>14</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>TX_BUFF</ItemText>
+        </Ww>
+        <Ww>
+          <count>15</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>MX25L8006E_ID</ItemText>
+        </Ww>
+        <Ww>
+          <count>16</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>address</ItemText>
+        </Ww>
+        <Ww>
+          <count>17</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>Address</ItemText>
         </Ww>
       </WatchWindow1>
       <MemoryWindow1>

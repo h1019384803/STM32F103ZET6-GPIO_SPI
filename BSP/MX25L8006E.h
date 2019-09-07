@@ -6,10 +6,6 @@
 #define _MX25_SECTOR_SIZE_                  4096
 
 
-extern uint8_t FLASH_IC_READY;//0：NOT REDAY 1：READY
-extern uint8_t FLASH_DATA[_MX25_SECTOR_SIZE_];//4Kbyt
-
-
 
 //MX25L8006E 命令
 #define	MX25_WR_ENABLE_CMD				    0x06	//取消写保护，置位状态寄存器的bit1位WEL
@@ -47,13 +43,17 @@ extern void MX25L8006E_WRITE_DISABLE(void);
 extern void MX25L8006E_Wait_Busy(void);
 extern void MX25L8006E_READ_DATA(uint8_t *Buffer,uint32_t Address,uint32_t Len);
 extern void MX25L8006E_WRITE_PAGE(uint8_t *Buffer,uint32_t Address,uint16_t Len);
+extern void MX25L8006E_WRITE_DATE_READY(uint8_t *Buffer,uint32_t Address,uint16_t Len);
+extern void MX25L8006E_WRITE_CHEACK_ERASE(uint8_t *Buffer,uint32_t Address,uint32_t Len); 
 extern void MX25L8006E_ERASE_SECTOR(uint32_t Address);
 extern void MX25L8006E_ERASE_BLOCK(uint32_t Address);
 extern void MX25L8006E_ERASE_CHIP(void);
 
 extern void MX25L8006E_Init(void);
 extern void MX25L8006E_TEST1(void);
+extern void MX25L8006E_TEST2(void);
 
+extern void MX25L8006E_TEST3(void);
 
 #endif
 
