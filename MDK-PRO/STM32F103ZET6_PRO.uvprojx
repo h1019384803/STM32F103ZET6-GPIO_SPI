@@ -525,19 +525,9 @@
           <GroupName>BSP</GroupName>
           <Files>
             <File>
-              <FileName>LED.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\LED.c</FilePath>
-            </File>
-            <File>
               <FileName>USART.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\BSP\USART.c</FilePath>
-            </File>
-            <File>
-              <FileName>KEY.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\BSP\KEY.c</FilePath>
             </File>
             <File>
               <FileName>IO_SPI.c</FileName>

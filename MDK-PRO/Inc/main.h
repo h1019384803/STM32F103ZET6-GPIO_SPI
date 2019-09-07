@@ -41,8 +41,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f1xx_hal.h" 
-#include "LED.h"
-#include "KEY.h"
 #include "USART.h"
 #include "IO_SPI.h"
 #include "MX25L8006E.h"

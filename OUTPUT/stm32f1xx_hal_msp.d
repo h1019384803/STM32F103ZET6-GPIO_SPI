@@ -30,8 +30,6 @@
 ..\output\stm32f1xx_hal_msp.o: ..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h
 ..\output\stm32f1xx_hal_msp.o: ..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h
 ..\output\stm32f1xx_hal_msp.o: ..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_wwdg.h
-..\output\stm32f1xx_hal_msp.o: ..\BSP\LED.h
-..\output\stm32f1xx_hal_msp.o: ..\BSP\KEY.h
 ..\output\stm32f1xx_hal_msp.o: ..\BSP\USART.h
 ..\output\stm32f1xx_hal_msp.o: ..\BSP\IO_SPI.h
 ..\output\stm32f1xx_hal_msp.o: ..\BSP\MX25L8006E.h

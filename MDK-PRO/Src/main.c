@@ -81,9 +81,6 @@ int main(void)
 
     /* Configure the system clock to 64 MHz */
     SystemClock_Config();
-
-    LED_Init(); 
-    KEY_Init();
     USART_Init(); 
     SPI_Init();
     MX25L8006E_Init();
