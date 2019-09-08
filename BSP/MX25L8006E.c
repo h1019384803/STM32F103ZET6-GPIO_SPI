@@ -488,6 +488,10 @@ void MX25L8006E_TEST2(void)
 	
 	MX25L8006E_READ_DATA(MX_TABLE,address,200);
 	
+	for(i = 0;i<101;i++)
+	{
+		printf("%d\r\n",MX_TABLE[i]);		
+	}
 }	
 
 

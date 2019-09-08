@@ -85,8 +85,9 @@ int main(void)
     SPI_Init();
     MX25L8006E_Init();
     
-	MX25L8006E_TEST1();
-	//MX25L8006E_TEST2();
+	//通过三个测试程序来验证MX25L8006E的读写
+	//MX25L8006E_TEST1();
+	MX25L8006E_TEST2();
     //MX25L8006E_TEST3();  
     
     /* Add your application code here

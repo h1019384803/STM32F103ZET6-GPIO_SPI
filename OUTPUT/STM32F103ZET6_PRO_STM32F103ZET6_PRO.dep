@@ -1,5 +1,5 @@
 Dependencies for Project 'STM32F103ZET6_PRO', Target 'STM32F103ZET6_PRO': (DO NOT MODIFY !)
-F (.\Src\main.c)(0x5D7475BB)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Inc -I ..\CORTEX -I ..\STM32F1xx_HAL_Driver\Inc -I ..\BSP-IE:\²©¿ÍÔ°\STM32F103ZET6\STM32F103ZET6_IO_SPI\MDK-PRO\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+F (.\Src\main.c)(0x5D74F182)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Inc -I ..\CORTEX -I ..\STM32F1xx_HAL_Driver\Inc -I ..\BSP-IE:\²©¿ÍÔ°\STM32F103ZET6\STM32F103ZET6_IO_SPI\MDK-PRO\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
 I (.\Inc\main.h)(0x5D73792C)
 I (..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D6DA1E5)
 I (.\Inc\stm32f1xx_hal_conf.h)(0x5D6DA1E4)
@@ -680,7 +680,7 @@ I (..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h)(0x5D6DA1E5)
 I (..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x5D6DA1E5)
 I (..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h)(0x5D6DA1E5)
 I (..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_wwdg.h)(0x5D6DA1E5)
-F (..\BSP\MX25L8006E.c)(0x5D74B625)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Inc -I ..\CORTEX -I ..\STM32F1xx_HAL_Driver\Inc -I ..\BSP-IE:\²©¿ÍÔ°\STM32F103ZET6\STM32F103ZET6_IO_SPI\MDK-PRO\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\output\mx25l8006e.o --omf_browse ..\output\mx25l8006e.crf --depend ..\output\mx25l8006e.d)
+F (..\BSP\MX25L8006E.c)(0x5D74F10C)(--c99 -c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Inc -I ..\CORTEX -I ..\STM32F1xx_HAL_Driver\Inc -I ..\BSP-IE:\²©¿ÍÔ°\STM32F103ZET6\STM32F103ZET6_IO_SPI\MDK-PRO\RTE-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-IC:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="521" -DSTM32F10X_HD -DUSE_HAL_DRIVER -DSTM32F103xE-o ..\output\mx25l8006e.o --omf_browse ..\output\mx25l8006e.crf --depend ..\output\mx25l8006e.d)
 I (..\BSP\MX25L8006E.h)(0x5D735FD2)
 I (..\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x5D6DA1E5)
 I (.\Inc\stm32f1xx_hal_conf.h)(0x5D6DA1E4)

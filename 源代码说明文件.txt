@@ -1,0 +1,19 @@
+
+1、IO_SPI.h和IO_SPI.c文件是IO口模拟SPI的头文件和源文件
+    以下是STM32F103ZET6模拟SPI的脚位对应：
+        GPIOA4作为SPI的片选信号
+        GPIOA5作为SPI的时钟信号
+        GPIOA7作为SPI的MOSI数据线
+        GPIOA6作为SPI的MISO数据线
+        
+    工程通过_SPI_CPOL和_SPI_CPHA这两个宏来选择对应的SPI通讯的模式
+    
+    宏_SPI_DELAY_是用来调整SPI通讯的时钟频率的，来用作为SPI_DELAY函数的参数。_SPI_DELAY_的值越小，SPI通讯的时钟频率就越高，相反_SPI_DELAY_的值越大，SPI通讯的时钟频率就越小。
+    
+    
+2、MX25L8006E.h和MX25L8006E.c文件是用来操作MX25L8006E芯片的头文件和源文件
+    通过使用模拟的SPI通讯方式来读写FLASH芯片IC MX25L8006E来验证SPI通讯是否正常。    
+            
+        
+
+

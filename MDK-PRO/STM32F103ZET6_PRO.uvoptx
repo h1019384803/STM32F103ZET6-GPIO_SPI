@@ -192,9 +192,9 @@
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>442</LineNumber>
+          <LineNumber>487</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134222700</Address>
+          <Address>134222718</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -203,23 +203,7 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>E:\鍗氬鍥?STM32F103ZET6\STM32F103ZET6_IO_SPI\BSP\MX25L8006E.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\STM32F103ZET6_PRO\../BSP/MX25L8006E.c\442</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>444</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134222712</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>E:\鍗氬鍥?STM32F103ZET6\STM32F103ZET6_IO_SPI\BSP\MX25L8006E.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\STM32F103ZET6_PRO\../BSP/MX25L8006E.c\444</Expression>
+          <Expression>\\STM32F103ZET6_PRO\../BSP/MX25L8006E.c\487</Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

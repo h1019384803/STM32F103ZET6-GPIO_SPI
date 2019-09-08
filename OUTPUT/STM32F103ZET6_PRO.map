@@ -11,7 +11,7 @@ Section Cross References
     main.o(i.main) refers to usart.o(i.USART_Init) for USART_Init
     main.o(i.main) refers to io_spi.o(i.SPI_Init) for SPI_Init
     main.o(i.main) refers to mx25l8006e.o(i.MX25L8006E_Init) for MX25L8006E_Init
-    main.o(i.main) refers to mx25l8006e.o(i.MX25L8006E_TEST1) for MX25L8006E_TEST1
+    main.o(i.main) refers to mx25l8006e.o(i.MX25L8006E_TEST2) for MX25L8006E_TEST2
     stm32f1xx_it.o(i.SysTick_Handler) refers to stm32f1xx_hal.o(i.HAL_IncTick) for HAL_IncTick
     system_stm32f1xx.o(i.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.data) for SystemCoreClock
     system_stm32f1xx.o(i.SystemCoreClockUpdate) refers to system_stm32f1xx.o(.constdata) for AHBPrescTable
@@ -464,8 +464,12 @@ Section Cross References
     mx25l8006e.o(i.MX25L8006E_TEST1) refers to noretval__2printf.o(.text) for __2printf
     mx25l8006e.o(i.MX25L8006E_TEST1) refers to mx25l8006e.o(.data) for MX25L8006E_ID
     mx25l8006e.o(i.MX25L8006E_TEST1) refers to mx25l8006e.o(.bss) for SWAP
+    mx25l8006e.o(i.MX25L8006E_TEST2) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
+    mx25l8006e.o(i.MX25L8006E_TEST2) refers to _printf_d.o(.ARM.Collect$$_printf_percent$$00000009) for _printf_d
+    mx25l8006e.o(i.MX25L8006E_TEST2) refers to _printf_dec.o(.text) for _printf_int_dec
     mx25l8006e.o(i.MX25L8006E_TEST2) refers to mx25l8006e.o(i.MX25L8006E_READ_DATA) for MX25L8006E_READ_DATA
     mx25l8006e.o(i.MX25L8006E_TEST2) refers to mx25l8006e.o(i.MX25L8006E_WRITE_CHEACK_ERASE) for MX25L8006E_WRITE_CHEACK_ERASE
+    mx25l8006e.o(i.MX25L8006E_TEST2) refers to noretval__2printf.o(.text) for __2printf
     mx25l8006e.o(i.MX25L8006E_TEST2) refers to mx25l8006e.o(.data) for MX25L8006E_ID
     mx25l8006e.o(i.MX25L8006E_TEST3) refers to _printf_percent.o(.ARM.Collect$$_printf_percent$$00000000) for _printf_percent
     mx25l8006e.o(i.MX25L8006E_TEST3) refers to _printf_s.o(.ARM.Collect$$_printf_percent$$00000014) for _printf_s
@@ -1066,11 +1070,11 @@ Removing Unused input sections from the image.
     Removing mx25l8006e.o(i.MX25L8006E_ERASE_BLOCK), (72 bytes).
     Removing mx25l8006e.o(i.MX25L8006E_ERASE_CHIP), (48 bytes).
     Removing mx25l8006e.o(i.MX25L8006E_READ_REMS), (84 bytes).
-    Removing mx25l8006e.o(i.MX25L8006E_TEST2), (108 bytes).
+    Removing mx25l8006e.o(i.MX25L8006E_TEST1), (160 bytes).
     Removing mx25l8006e.o(i.MX25L8006E_TEST3), (136 bytes).
     Removing mx25l8006e.o(i.MX25L8006E_WRITE_DISABLE), (40 bytes).
 
-428 unused section(s) (total 32042 bytes) removed from the image.
+428 unused section(s) (total 32094 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1303,40 +1307,40 @@ Image Symbol Table
     i.MX25L8006E_Init                        0x0800122c   Section        0  mx25l8006e.o(i.MX25L8006E_Init)
     i.MX25L8006E_READ_DATA                   0x08001298   Section        0  mx25l8006e.o(i.MX25L8006E_READ_DATA)
     i.MX25L8006E_READ_ID                     0x080012f0   Section        0  mx25l8006e.o(i.MX25L8006E_READ_ID)
-    i.MX25L8006E_TEST1                       0x08001334   Section        0  mx25l8006e.o(i.MX25L8006E_TEST1)
-    i.MX25L8006E_WRITE_CHEACK_ERASE          0x080013d4   Section        0  mx25l8006e.o(i.MX25L8006E_WRITE_CHEACK_ERASE)
-    i.MX25L8006E_WRITE_DATE_READY            0x08001488   Section        0  mx25l8006e.o(i.MX25L8006E_WRITE_DATE_READY)
-    i.MX25L8006E_WRITE_ENABLE                0x080014c4   Section        0  mx25l8006e.o(i.MX25L8006E_WRITE_ENABLE)
-    i.MX25L8006E_WRITE_PAGE                  0x080014ec   Section        0  mx25l8006e.o(i.MX25L8006E_WRITE_PAGE)
-    i.MX25L8006E_Wait_Busy                   0x0800154c   Section        0  mx25l8006e.o(i.MX25L8006E_Wait_Busy)
-    i.MemManage_Handler                      0x08001584   Section        0  stm32f1xx_it.o(i.MemManage_Handler)
-    i.NMI_Handler                            0x08001588   Section        0  stm32f1xx_it.o(i.NMI_Handler)
-    i.NVIC_GetPriorityGrouping               0x0800158c   Section        0  stm32f1xx_hal_cortex.o(i.NVIC_GetPriorityGrouping)
-    NVIC_GetPriorityGrouping                 0x0800158d   Thumb Code    10  stm32f1xx_hal_cortex.o(i.NVIC_GetPriorityGrouping)
-    i.NVIC_SetPriority                       0x0800159c   Section        0  stm32f1xx_hal_cortex.o(i.NVIC_SetPriority)
-    NVIC_SetPriority                         0x0800159d   Thumb Code    32  stm32f1xx_hal_cortex.o(i.NVIC_SetPriority)
-    i.PendSV_Handler                         0x080015c4   Section        0  stm32f1xx_it.o(i.PendSV_Handler)
-    i.RCC_Delay                              0x080015c8   Section        0  stm32f1xx_hal_rcc.o(i.RCC_Delay)
-    RCC_Delay                                0x080015c9   Thumb Code    36  stm32f1xx_hal_rcc.o(i.RCC_Delay)
-    i.SPI_DELAY                              0x080015f0   Section        0  io_spi.o(i.SPI_DELAY)
-    i.SPI_Init                               0x08001614   Section        0  io_spi.o(i.SPI_Init)
-    i.SPI_WRITE_READ_BYTE                    0x08001694   Section        0  io_spi.o(i.SPI_WRITE_READ_BYTE)
-    i.SVC_Handler                            0x0800170c   Section        0  stm32f1xx_it.o(i.SVC_Handler)
-    i.SysTick_Handler                        0x0800170e   Section        0  stm32f1xx_it.o(i.SysTick_Handler)
-    i.SystemClock_Config                     0x08001716   Section        0  main.o(i.SystemClock_Config)
-    i.SystemInit                             0x0800176c   Section        0  system_stm32f1xx.o(i.SystemInit)
-    i.UART_SetConfig                         0x080017c4   Section        0  stm32f1xx_hal_uart.o(i.UART_SetConfig)
-    UART_SetConfig                           0x080017c5   Thumb Code   450  stm32f1xx_hal_uart.o(i.UART_SetConfig)
-    i.USART1_IRQHandler                      0x0800198c   Section        0  usart.o(i.USART1_IRQHandler)
-    i.USART_Init                             0x080019b0   Section        0  usart.o(i.USART_Init)
-    i.UsageFault_Handler                     0x080019fc   Section        0  stm32f1xx_it.o(i.UsageFault_Handler)
-    i._sys_exit                              0x08001a00   Section        0  usart.o(i._sys_exit)
-    i.fputc                                  0x08001a04   Section        0  usart.o(i.fputc)
-    i.main                                   0x08001a24   Section        0  main.o(i.main)
-    .constdata                               0x08001a40   Section       24  system_stm32f1xx.o(.constdata)
-    .constdata                               0x08001a58   Section       40  _printf_hex_int.o(.constdata)
-    uc_hextab                                0x08001a58   Data          20  _printf_hex_int.o(.constdata)
-    lc_hextab                                0x08001a6c   Data          20  _printf_hex_int.o(.constdata)
+    i.MX25L8006E_TEST2                       0x08001334   Section        0  mx25l8006e.o(i.MX25L8006E_TEST2)
+    i.MX25L8006E_WRITE_CHEACK_ERASE          0x080013cc   Section        0  mx25l8006e.o(i.MX25L8006E_WRITE_CHEACK_ERASE)
+    i.MX25L8006E_WRITE_DATE_READY            0x08001480   Section        0  mx25l8006e.o(i.MX25L8006E_WRITE_DATE_READY)
+    i.MX25L8006E_WRITE_ENABLE                0x080014bc   Section        0  mx25l8006e.o(i.MX25L8006E_WRITE_ENABLE)
+    i.MX25L8006E_WRITE_PAGE                  0x080014e4   Section        0  mx25l8006e.o(i.MX25L8006E_WRITE_PAGE)
+    i.MX25L8006E_Wait_Busy                   0x08001544   Section        0  mx25l8006e.o(i.MX25L8006E_Wait_Busy)
+    i.MemManage_Handler                      0x0800157c   Section        0  stm32f1xx_it.o(i.MemManage_Handler)
+    i.NMI_Handler                            0x08001580   Section        0  stm32f1xx_it.o(i.NMI_Handler)
+    i.NVIC_GetPriorityGrouping               0x08001584   Section        0  stm32f1xx_hal_cortex.o(i.NVIC_GetPriorityGrouping)
+    NVIC_GetPriorityGrouping                 0x08001585   Thumb Code    10  stm32f1xx_hal_cortex.o(i.NVIC_GetPriorityGrouping)
+    i.NVIC_SetPriority                       0x08001594   Section        0  stm32f1xx_hal_cortex.o(i.NVIC_SetPriority)
+    NVIC_SetPriority                         0x08001595   Thumb Code    32  stm32f1xx_hal_cortex.o(i.NVIC_SetPriority)
+    i.PendSV_Handler                         0x080015bc   Section        0  stm32f1xx_it.o(i.PendSV_Handler)
+    i.RCC_Delay                              0x080015c0   Section        0  stm32f1xx_hal_rcc.o(i.RCC_Delay)
+    RCC_Delay                                0x080015c1   Thumb Code    36  stm32f1xx_hal_rcc.o(i.RCC_Delay)
+    i.SPI_DELAY                              0x080015e8   Section        0  io_spi.o(i.SPI_DELAY)
+    i.SPI_Init                               0x0800160c   Section        0  io_spi.o(i.SPI_Init)
+    i.SPI_WRITE_READ_BYTE                    0x0800168c   Section        0  io_spi.o(i.SPI_WRITE_READ_BYTE)
+    i.SVC_Handler                            0x08001704   Section        0  stm32f1xx_it.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x08001706   Section        0  stm32f1xx_it.o(i.SysTick_Handler)
+    i.SystemClock_Config                     0x0800170e   Section        0  main.o(i.SystemClock_Config)
+    i.SystemInit                             0x08001764   Section        0  system_stm32f1xx.o(i.SystemInit)
+    i.UART_SetConfig                         0x080017bc   Section        0  stm32f1xx_hal_uart.o(i.UART_SetConfig)
+    UART_SetConfig                           0x080017bd   Thumb Code   450  stm32f1xx_hal_uart.o(i.UART_SetConfig)
+    i.USART1_IRQHandler                      0x08001984   Section        0  usart.o(i.USART1_IRQHandler)
+    i.USART_Init                             0x080019a8   Section        0  usart.o(i.USART_Init)
+    i.UsageFault_Handler                     0x080019f4   Section        0  stm32f1xx_it.o(i.UsageFault_Handler)
+    i._sys_exit                              0x080019f8   Section        0  usart.o(i._sys_exit)
+    i.fputc                                  0x080019fc   Section        0  usart.o(i.fputc)
+    i.main                                   0x08001a1c   Section        0  main.o(i.main)
+    .constdata                               0x08001a38   Section       24  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08001a50   Section       40  _printf_hex_int.o(.constdata)
+    uc_hextab                                0x08001a50   Data          20  _printf_hex_int.o(.constdata)
+    lc_hextab                                0x08001a64   Data          20  _printf_hex_int.o(.constdata)
     .data                                    0x20000000   Section        4  system_stm32f1xx.o(.data)
     .data                                    0x20000004   Section        9  stm32f1xx_hal.o(.data)
     .data                                    0x20000010   Section        8  usart.o(.data)
@@ -1555,32 +1559,32 @@ Image Symbol Table
     MX25L8006E_Init                          0x0800122d   Thumb Code    46  mx25l8006e.o(i.MX25L8006E_Init)
     MX25L8006E_READ_DATA                     0x08001299   Thumb Code    82  mx25l8006e.o(i.MX25L8006E_READ_DATA)
     MX25L8006E_READ_ID                       0x080012f1   Thumb Code    62  mx25l8006e.o(i.MX25L8006E_READ_ID)
-    MX25L8006E_TEST1                         0x08001335   Thumb Code   114  mx25l8006e.o(i.MX25L8006E_TEST1)
-    MX25L8006E_WRITE_CHEACK_ERASE            0x080013d5   Thumb Code   176  mx25l8006e.o(i.MX25L8006E_WRITE_CHEACK_ERASE)
-    MX25L8006E_WRITE_DATE_READY              0x08001489   Thumb Code    58  mx25l8006e.o(i.MX25L8006E_WRITE_DATE_READY)
-    MX25L8006E_WRITE_ENABLE                  0x080014c5   Thumb Code    36  mx25l8006e.o(i.MX25L8006E_WRITE_ENABLE)
-    MX25L8006E_WRITE_PAGE                    0x080014ed   Thumb Code    92  mx25l8006e.o(i.MX25L8006E_WRITE_PAGE)
-    MX25L8006E_Wait_Busy                     0x0800154d   Thumb Code    50  mx25l8006e.o(i.MX25L8006E_Wait_Busy)
-    MemManage_Handler                        0x08001585   Thumb Code     4  stm32f1xx_it.o(i.MemManage_Handler)
-    NMI_Handler                              0x08001589   Thumb Code     2  stm32f1xx_it.o(i.NMI_Handler)
-    PendSV_Handler                           0x080015c5   Thumb Code     2  stm32f1xx_it.o(i.PendSV_Handler)
-    SPI_DELAY                                0x080015f1   Thumb Code    34  io_spi.o(i.SPI_DELAY)
-    SPI_Init                                 0x08001615   Thumb Code   120  io_spi.o(i.SPI_Init)
-    SPI_WRITE_READ_BYTE                      0x08001695   Thumb Code   114  io_spi.o(i.SPI_WRITE_READ_BYTE)
-    SVC_Handler                              0x0800170d   Thumb Code     2  stm32f1xx_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x0800170f   Thumb Code     8  stm32f1xx_it.o(i.SysTick_Handler)
-    SystemClock_Config                       0x08001717   Thumb Code    86  main.o(i.SystemClock_Config)
-    SystemInit                               0x0800176d   Thumb Code    70  system_stm32f1xx.o(i.SystemInit)
-    USART1_IRQHandler                        0x0800198d   Thumb Code    26  usart.o(i.USART1_IRQHandler)
-    USART_Init                               0x080019b1   Thumb Code    68  usart.o(i.USART_Init)
-    UsageFault_Handler                       0x080019fd   Thumb Code     4  stm32f1xx_it.o(i.UsageFault_Handler)
-    _sys_exit                                0x08001a01   Thumb Code     4  usart.o(i._sys_exit)
-    fputc                                    0x08001a05   Thumb Code    26  usart.o(i.fputc)
-    main                                     0x08001a25   Thumb Code    28  main.o(i.main)
-    AHBPrescTable                            0x08001a40   Data          16  system_stm32f1xx.o(.constdata)
-    APBPrescTable                            0x08001a50   Data           8  system_stm32f1xx.o(.constdata)
-    Region$$Table$$Base                      0x08001a80   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08001aa0   Number         0  anon$$obj.o(Region$$Table)
+    MX25L8006E_TEST2                         0x08001335   Thumb Code   136  mx25l8006e.o(i.MX25L8006E_TEST2)
+    MX25L8006E_WRITE_CHEACK_ERASE            0x080013cd   Thumb Code   176  mx25l8006e.o(i.MX25L8006E_WRITE_CHEACK_ERASE)
+    MX25L8006E_WRITE_DATE_READY              0x08001481   Thumb Code    58  mx25l8006e.o(i.MX25L8006E_WRITE_DATE_READY)
+    MX25L8006E_WRITE_ENABLE                  0x080014bd   Thumb Code    36  mx25l8006e.o(i.MX25L8006E_WRITE_ENABLE)
+    MX25L8006E_WRITE_PAGE                    0x080014e5   Thumb Code    92  mx25l8006e.o(i.MX25L8006E_WRITE_PAGE)
+    MX25L8006E_Wait_Busy                     0x08001545   Thumb Code    50  mx25l8006e.o(i.MX25L8006E_Wait_Busy)
+    MemManage_Handler                        0x0800157d   Thumb Code     4  stm32f1xx_it.o(i.MemManage_Handler)
+    NMI_Handler                              0x08001581   Thumb Code     2  stm32f1xx_it.o(i.NMI_Handler)
+    PendSV_Handler                           0x080015bd   Thumb Code     2  stm32f1xx_it.o(i.PendSV_Handler)
+    SPI_DELAY                                0x080015e9   Thumb Code    34  io_spi.o(i.SPI_DELAY)
+    SPI_Init                                 0x0800160d   Thumb Code   120  io_spi.o(i.SPI_Init)
+    SPI_WRITE_READ_BYTE                      0x0800168d   Thumb Code   114  io_spi.o(i.SPI_WRITE_READ_BYTE)
+    SVC_Handler                              0x08001705   Thumb Code     2  stm32f1xx_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x08001707   Thumb Code     8  stm32f1xx_it.o(i.SysTick_Handler)
+    SystemClock_Config                       0x0800170f   Thumb Code    86  main.o(i.SystemClock_Config)
+    SystemInit                               0x08001765   Thumb Code    70  system_stm32f1xx.o(i.SystemInit)
+    USART1_IRQHandler                        0x08001985   Thumb Code    26  usart.o(i.USART1_IRQHandler)
+    USART_Init                               0x080019a9   Thumb Code    68  usart.o(i.USART_Init)
+    UsageFault_Handler                       0x080019f5   Thumb Code     4  stm32f1xx_it.o(i.UsageFault_Handler)
+    _sys_exit                                0x080019f9   Thumb Code     4  usart.o(i._sys_exit)
+    fputc                                    0x080019fd   Thumb Code    26  usart.o(i.fputc)
+    main                                     0x08001a1d   Thumb Code    28  main.o(i.main)
+    AHBPrescTable                            0x08001a38   Data          16  system_stm32f1xx.o(.constdata)
+    APBPrescTable                            0x08001a48   Data           8  system_stm32f1xx.o(.constdata)
+    Region$$Table$$Base                      0x08001a78   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001a98   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f1xx.o(.data)
     uwTick                                   0x20000004   Data           4  stm32f1xx_hal.o(.data)
     uwTickPrio                               0x20000008   Data           4  stm32f1xx_hal.o(.data)
@@ -1602,9 +1606,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001abc, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001ab4, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00001aa0, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00001a98, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1707,39 +1711,39 @@ Memory Map of the image
     0x0800122c   0x0000006c   Code   RO         2870    i.MX25L8006E_Init   mx25l8006e.o
     0x08001298   0x00000058   Code   RO         2871    i.MX25L8006E_READ_DATA  mx25l8006e.o
     0x080012f0   0x00000044   Code   RO         2872    i.MX25L8006E_READ_ID  mx25l8006e.o
-    0x08001334   0x000000a0   Code   RO         2874    i.MX25L8006E_TEST1  mx25l8006e.o
-    0x080013d4   0x000000b4   Code   RO         2877    i.MX25L8006E_WRITE_CHEACK_ERASE  mx25l8006e.o
-    0x08001488   0x0000003a   Code   RO         2878    i.MX25L8006E_WRITE_DATE_READY  mx25l8006e.o
-    0x080014c2   0x00000002   PAD
-    0x080014c4   0x00000028   Code   RO         2880    i.MX25L8006E_WRITE_ENABLE  mx25l8006e.o
-    0x080014ec   0x00000060   Code   RO         2881    i.MX25L8006E_WRITE_PAGE  mx25l8006e.o
-    0x0800154c   0x00000038   Code   RO         2882    i.MX25L8006E_Wait_Busy  mx25l8006e.o
-    0x08001584   0x00000004   Code   RO          174    i.MemManage_Handler  stm32f1xx_it.o
-    0x08001588   0x00000002   Code   RO          175    i.NMI_Handler       stm32f1xx_it.o
-    0x0800158a   0x00000002   PAD
-    0x0800158c   0x00000010   Code   RO          467    i.NVIC_GetPriorityGrouping  stm32f1xx_hal_cortex.o
-    0x0800159c   0x00000028   Code   RO          468    i.NVIC_SetPriority  stm32f1xx_hal_cortex.o
-    0x080015c4   0x00000002   Code   RO          176    i.PendSV_Handler    stm32f1xx_it.o
-    0x080015c6   0x00000002   PAD
-    0x080015c8   0x00000028   Code   RO          863    i.RCC_Delay         stm32f1xx_hal_rcc.o
-    0x080015f0   0x00000022   Code   RO         2831    i.SPI_DELAY         io_spi.o
-    0x08001612   0x00000002   PAD
-    0x08001614   0x00000080   Code   RO         2832    i.SPI_Init          io_spi.o
-    0x08001694   0x00000078   Code   RO         2833    i.SPI_WRITE_READ_BYTE  io_spi.o
-    0x0800170c   0x00000002   Code   RO          177    i.SVC_Handler       stm32f1xx_it.o
-    0x0800170e   0x00000008   Code   RO          178    i.SysTick_Handler   stm32f1xx_it.o
-    0x08001716   0x00000056   Code   RO            4    i.SystemClock_Config  main.o
-    0x0800176c   0x00000058   Code   RO          247    i.SystemInit        system_stm32f1xx.o
-    0x080017c4   0x000001c8   Code   RO         2055    i.UART_SetConfig    stm32f1xx_hal_uart.o
-    0x0800198c   0x00000024   Code   RO         2773    i.USART1_IRQHandler  usart.o
-    0x080019b0   0x0000004c   Code   RO         2774    i.USART_Init        usart.o
-    0x080019fc   0x00000004   Code   RO          179    i.UsageFault_Handler  stm32f1xx_it.o
-    0x08001a00   0x00000004   Code   RO         2775    i._sys_exit         usart.o
-    0x08001a04   0x00000020   Code   RO         2776    i.fputc             usart.o
-    0x08001a24   0x0000001c   Code   RO            5    i.main              main.o
-    0x08001a40   0x00000018   Data   RO          248    .constdata          system_stm32f1xx.o
-    0x08001a58   0x00000028   Data   RO         3002    .constdata          c_w.l(_printf_hex_int.o)
-    0x08001a80   0x00000020   Data   RO         3215    Region$$Table       anon$$obj.o
+    0x08001334   0x00000098   Code   RO         2875    i.MX25L8006E_TEST2  mx25l8006e.o
+    0x080013cc   0x000000b4   Code   RO         2877    i.MX25L8006E_WRITE_CHEACK_ERASE  mx25l8006e.o
+    0x08001480   0x0000003a   Code   RO         2878    i.MX25L8006E_WRITE_DATE_READY  mx25l8006e.o
+    0x080014ba   0x00000002   PAD
+    0x080014bc   0x00000028   Code   RO         2880    i.MX25L8006E_WRITE_ENABLE  mx25l8006e.o
+    0x080014e4   0x00000060   Code   RO         2881    i.MX25L8006E_WRITE_PAGE  mx25l8006e.o
+    0x08001544   0x00000038   Code   RO         2882    i.MX25L8006E_Wait_Busy  mx25l8006e.o
+    0x0800157c   0x00000004   Code   RO          174    i.MemManage_Handler  stm32f1xx_it.o
+    0x08001580   0x00000002   Code   RO          175    i.NMI_Handler       stm32f1xx_it.o
+    0x08001582   0x00000002   PAD
+    0x08001584   0x00000010   Code   RO          467    i.NVIC_GetPriorityGrouping  stm32f1xx_hal_cortex.o
+    0x08001594   0x00000028   Code   RO          468    i.NVIC_SetPriority  stm32f1xx_hal_cortex.o
+    0x080015bc   0x00000002   Code   RO          176    i.PendSV_Handler    stm32f1xx_it.o
+    0x080015be   0x00000002   PAD
+    0x080015c0   0x00000028   Code   RO          863    i.RCC_Delay         stm32f1xx_hal_rcc.o
+    0x080015e8   0x00000022   Code   RO         2831    i.SPI_DELAY         io_spi.o
+    0x0800160a   0x00000002   PAD
+    0x0800160c   0x00000080   Code   RO         2832    i.SPI_Init          io_spi.o
+    0x0800168c   0x00000078   Code   RO         2833    i.SPI_WRITE_READ_BYTE  io_spi.o
+    0x08001704   0x00000002   Code   RO          177    i.SVC_Handler       stm32f1xx_it.o
+    0x08001706   0x00000008   Code   RO          178    i.SysTick_Handler   stm32f1xx_it.o
+    0x0800170e   0x00000056   Code   RO            4    i.SystemClock_Config  main.o
+    0x08001764   0x00000058   Code   RO          247    i.SystemInit        system_stm32f1xx.o
+    0x080017bc   0x000001c8   Code   RO         2055    i.UART_SetConfig    stm32f1xx_hal_uart.o
+    0x08001984   0x00000024   Code   RO         2773    i.USART1_IRQHandler  usart.o
+    0x080019a8   0x0000004c   Code   RO         2774    i.USART_Init        usart.o
+    0x080019f4   0x00000004   Code   RO          179    i.UsageFault_Handler  stm32f1xx_it.o
+    0x080019f8   0x00000004   Code   RO         2775    i._sys_exit         usart.o
+    0x080019fc   0x00000020   Code   RO         2776    i.fputc             usart.o
+    0x08001a1c   0x0000001c   Code   RO            5    i.main              main.o
+    0x08001a38   0x00000018   Data   RO          248    .constdata          system_stm32f1xx.o
+    0x08001a50   0x00000028   Data   RO         3002    .constdata          c_w.l(_printf_hex_int.o)
+    0x08001a78   0x00000020   Data   RO         3215    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000026c0, Max: 0x00010000, ABSOLUTE)
@@ -1768,7 +1772,7 @@ Image component sizes
 
        282         14          0          0          0       1925   io_spi.o
        114          0          0          0          0     449352   main.o
-       926        144          0          4       8192       6723   mx25l8006e.o
+       918        114          0          4       8192       6739   mx25l8006e.o
         64         26        304          0       1536        792   startup_stm32f103xe.o
        192         36          0          9          0       6333   stm32f1xx_hal.o
        298         22          0          0          0      25995   stm32f1xx_hal_cortex.o
@@ -1781,7 +1785,7 @@ Image component sizes
        268         32          0          8         64       4225   usart.o
 
     ----------------------------------------------------------------------
-      5524        448        360         28       9792     511223   Object Totals
+      5516        418        360         28       9792     511239   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         12          0          0          3          0          0   (incl. Padding)
 
@@ -1841,15 +1845,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6416        494        400         28       9892     509363   Grand Totals
-      6416        494        400         28       9892     509363   ELF Image Totals
-      6416        494        400         28          0          0   ROM Totals
+      6408        464        400         28       9892     509379   Grand Totals
+      6408        464        400         28       9892     509379   ELF Image Totals
+      6408        464        400         28          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 6816 (   6.66kB)
+    Total RO  Size (Code + RO Data)                 6808 (   6.65kB)
     Total RW  Size (RW Data + ZI Data)              9920 (   9.69kB)
-    Total ROM Size (Code + RO Data + RW Data)       6844 (   6.68kB)
+    Total ROM Size (Code + RO Data + RW Data)       6836 (   6.68kB)
 
 ==============================================================================
 
