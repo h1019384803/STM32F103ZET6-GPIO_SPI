@@ -57,8 +57,9 @@ void SPI_Init(void)
 *******************************************************************************/
 void SPI_DELAY(uint16_t del)
 {
-    while(del)
-    {
+	uint8_t i;
+	for(i=0;i<del;i++)
+	{
         __NOP();    
         __NOP();
         __NOP();
@@ -69,7 +70,6 @@ void SPI_DELAY(uint16_t del)
         __NOP();
         __NOP();
         __NOP();
-        del--;
     }
 }
 
@@ -97,15 +97,12 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
         else
         {
             SPI_MOSI(0);       
-        }    
-            
+        }     
         TX_DAT <<= 1;    
         
         SPI_DELAY(_SPI_DELAY_);
                 
         SPI_CLK(1);
-
-        SPI_DELAY(_SPI_DELAY_);
         
         RX_DAT <<= 1;
     
@@ -113,6 +110,8 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
         {
             RX_DAT |= 0x01;    
         }   
+		
+        SPI_DELAY(_SPI_DELAY_);			
     }
     
     SPI_CLK(0);//空闲时SCK为低电平
@@ -146,14 +145,15 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
         
         SPI_CLK(0);
 
-        SPI_DELAY(_SPI_DELAY_);
-
         RX_DAT <<= 1;
     
         if(SPI_MISO != 0)
         {
             RX_DAT |= 0x01;    
-        }   
+        }
+		
+        SPI_DELAY(_SPI_DELAY_);		
+		
     }
     
     return RX_DAT;
@@ -184,15 +184,15 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
         SPI_DELAY(_SPI_DELAY_);
     
         SPI_CLK(0);
-        
-        SPI_DELAY(_SPI_DELAY_); 
-
+       
         RX_DAT <<= 1;
     
         if(SPI_MISO != 0)
         {
-            RX_DAT |= 0x01;    
+            RX_DAT |= 0x01;  			
         }   
+		
+        SPI_DELAY(_SPI_DELAY_); 		
     }
 
     SPI_SCK(1);//空闲时SCK为高电平
@@ -226,16 +226,17 @@ uint8_t SPI_WRITE_READ_BYTE(uint8_t TX_DAT)
     
         SPI_CLK(1);
 
-        SPI_DELAY(_SPI_DELAY_);
-
         RX_DAT <<= 1;
     
         if(SPI_MISO != 0)
         {
             RX_DAT |= 0x01;    
-        }   
+        }
+		
+		SPI_DELAY(_SPI_DELAY_);			
+			
     }
-    
+   
     return RX_DAT;
 }
 

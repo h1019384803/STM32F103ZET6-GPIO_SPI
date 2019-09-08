@@ -3,7 +3,7 @@
 #include "stm32f1xx_hal.h"
 
 
-#define _SPI_DELAY_						50		//数值太小可能造成通讯异常，当读不到数据时，可以加大这个数值
+#define _SPI_DELAY_						1		//数值太小可能造成通讯异常，当读不到数据时，可以加大这个数值
 
 
 #define _SPI_CPOL   					0		//选择CLK在空闲时的电平状态，0：空闲时为低电平，1：空闲时为高电平

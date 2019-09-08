@@ -1319,24 +1319,24 @@ Image Symbol Table
     i.RCC_Delay                              0x080015c8   Section        0  stm32f1xx_hal_rcc.o(i.RCC_Delay)
     RCC_Delay                                0x080015c9   Thumb Code    36  stm32f1xx_hal_rcc.o(i.RCC_Delay)
     i.SPI_DELAY                              0x080015f0   Section        0  io_spi.o(i.SPI_DELAY)
-    i.SPI_Init                               0x08001610   Section        0  io_spi.o(i.SPI_Init)
-    i.SPI_WRITE_READ_BYTE                    0x08001690   Section        0  io_spi.o(i.SPI_WRITE_READ_BYTE)
-    i.SVC_Handler                            0x08001708   Section        0  stm32f1xx_it.o(i.SVC_Handler)
-    i.SysTick_Handler                        0x0800170a   Section        0  stm32f1xx_it.o(i.SysTick_Handler)
-    i.SystemClock_Config                     0x08001712   Section        0  main.o(i.SystemClock_Config)
-    i.SystemInit                             0x08001768   Section        0  system_stm32f1xx.o(i.SystemInit)
-    i.UART_SetConfig                         0x080017c0   Section        0  stm32f1xx_hal_uart.o(i.UART_SetConfig)
-    UART_SetConfig                           0x080017c1   Thumb Code   450  stm32f1xx_hal_uart.o(i.UART_SetConfig)
-    i.USART1_IRQHandler                      0x08001988   Section        0  usart.o(i.USART1_IRQHandler)
-    i.USART_Init                             0x080019ac   Section        0  usart.o(i.USART_Init)
-    i.UsageFault_Handler                     0x080019f8   Section        0  stm32f1xx_it.o(i.UsageFault_Handler)
-    i._sys_exit                              0x080019fc   Section        0  usart.o(i._sys_exit)
-    i.fputc                                  0x08001a00   Section        0  usart.o(i.fputc)
-    i.main                                   0x08001a20   Section        0  main.o(i.main)
-    .constdata                               0x08001a3c   Section       24  system_stm32f1xx.o(.constdata)
-    .constdata                               0x08001a54   Section       40  _printf_hex_int.o(.constdata)
-    uc_hextab                                0x08001a54   Data          20  _printf_hex_int.o(.constdata)
-    lc_hextab                                0x08001a68   Data          20  _printf_hex_int.o(.constdata)
+    i.SPI_Init                               0x08001614   Section        0  io_spi.o(i.SPI_Init)
+    i.SPI_WRITE_READ_BYTE                    0x08001694   Section        0  io_spi.o(i.SPI_WRITE_READ_BYTE)
+    i.SVC_Handler                            0x0800170c   Section        0  stm32f1xx_it.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x0800170e   Section        0  stm32f1xx_it.o(i.SysTick_Handler)
+    i.SystemClock_Config                     0x08001716   Section        0  main.o(i.SystemClock_Config)
+    i.SystemInit                             0x0800176c   Section        0  system_stm32f1xx.o(i.SystemInit)
+    i.UART_SetConfig                         0x080017c4   Section        0  stm32f1xx_hal_uart.o(i.UART_SetConfig)
+    UART_SetConfig                           0x080017c5   Thumb Code   450  stm32f1xx_hal_uart.o(i.UART_SetConfig)
+    i.USART1_IRQHandler                      0x0800198c   Section        0  usart.o(i.USART1_IRQHandler)
+    i.USART_Init                             0x080019b0   Section        0  usart.o(i.USART_Init)
+    i.UsageFault_Handler                     0x080019fc   Section        0  stm32f1xx_it.o(i.UsageFault_Handler)
+    i._sys_exit                              0x08001a00   Section        0  usart.o(i._sys_exit)
+    i.fputc                                  0x08001a04   Section        0  usart.o(i.fputc)
+    i.main                                   0x08001a24   Section        0  main.o(i.main)
+    .constdata                               0x08001a40   Section       24  system_stm32f1xx.o(.constdata)
+    .constdata                               0x08001a58   Section       40  _printf_hex_int.o(.constdata)
+    uc_hextab                                0x08001a58   Data          20  _printf_hex_int.o(.constdata)
+    lc_hextab                                0x08001a6c   Data          20  _printf_hex_int.o(.constdata)
     .data                                    0x20000000   Section        4  system_stm32f1xx.o(.data)
     .data                                    0x20000004   Section        9  stm32f1xx_hal.o(.data)
     .data                                    0x20000010   Section        8  usart.o(.data)
@@ -1564,23 +1564,23 @@ Image Symbol Table
     MemManage_Handler                        0x08001585   Thumb Code     4  stm32f1xx_it.o(i.MemManage_Handler)
     NMI_Handler                              0x08001589   Thumb Code     2  stm32f1xx_it.o(i.NMI_Handler)
     PendSV_Handler                           0x080015c5   Thumb Code     2  stm32f1xx_it.o(i.PendSV_Handler)
-    SPI_DELAY                                0x080015f1   Thumb Code    32  io_spi.o(i.SPI_DELAY)
-    SPI_Init                                 0x08001611   Thumb Code   120  io_spi.o(i.SPI_Init)
-    SPI_WRITE_READ_BYTE                      0x08001691   Thumb Code   114  io_spi.o(i.SPI_WRITE_READ_BYTE)
-    SVC_Handler                              0x08001709   Thumb Code     2  stm32f1xx_it.o(i.SVC_Handler)
-    SysTick_Handler                          0x0800170b   Thumb Code     8  stm32f1xx_it.o(i.SysTick_Handler)
-    SystemClock_Config                       0x08001713   Thumb Code    86  main.o(i.SystemClock_Config)
-    SystemInit                               0x08001769   Thumb Code    70  system_stm32f1xx.o(i.SystemInit)
-    USART1_IRQHandler                        0x08001989   Thumb Code    26  usart.o(i.USART1_IRQHandler)
-    USART_Init                               0x080019ad   Thumb Code    68  usart.o(i.USART_Init)
-    UsageFault_Handler                       0x080019f9   Thumb Code     4  stm32f1xx_it.o(i.UsageFault_Handler)
-    _sys_exit                                0x080019fd   Thumb Code     4  usart.o(i._sys_exit)
-    fputc                                    0x08001a01   Thumb Code    26  usart.o(i.fputc)
-    main                                     0x08001a21   Thumb Code    28  main.o(i.main)
-    AHBPrescTable                            0x08001a3c   Data          16  system_stm32f1xx.o(.constdata)
-    APBPrescTable                            0x08001a4c   Data           8  system_stm32f1xx.o(.constdata)
-    Region$$Table$$Base                      0x08001a7c   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08001a9c   Number         0  anon$$obj.o(Region$$Table)
+    SPI_DELAY                                0x080015f1   Thumb Code    34  io_spi.o(i.SPI_DELAY)
+    SPI_Init                                 0x08001615   Thumb Code   120  io_spi.o(i.SPI_Init)
+    SPI_WRITE_READ_BYTE                      0x08001695   Thumb Code   114  io_spi.o(i.SPI_WRITE_READ_BYTE)
+    SVC_Handler                              0x0800170d   Thumb Code     2  stm32f1xx_it.o(i.SVC_Handler)
+    SysTick_Handler                          0x0800170f   Thumb Code     8  stm32f1xx_it.o(i.SysTick_Handler)
+    SystemClock_Config                       0x08001717   Thumb Code    86  main.o(i.SystemClock_Config)
+    SystemInit                               0x0800176d   Thumb Code    70  system_stm32f1xx.o(i.SystemInit)
+    USART1_IRQHandler                        0x0800198d   Thumb Code    26  usart.o(i.USART1_IRQHandler)
+    USART_Init                               0x080019b1   Thumb Code    68  usart.o(i.USART_Init)
+    UsageFault_Handler                       0x080019fd   Thumb Code     4  stm32f1xx_it.o(i.UsageFault_Handler)
+    _sys_exit                                0x08001a01   Thumb Code     4  usart.o(i._sys_exit)
+    fputc                                    0x08001a05   Thumb Code    26  usart.o(i.fputc)
+    main                                     0x08001a25   Thumb Code    28  main.o(i.main)
+    AHBPrescTable                            0x08001a40   Data          16  system_stm32f1xx.o(.constdata)
+    APBPrescTable                            0x08001a50   Data           8  system_stm32f1xx.o(.constdata)
+    Region$$Table$$Base                      0x08001a80   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08001aa0   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32f1xx.o(.data)
     uwTick                                   0x20000004   Data           4  stm32f1xx_hal.o(.data)
     uwTickPrio                               0x20000008   Data           4  stm32f1xx_hal.o(.data)
@@ -1602,9 +1602,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000131
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001ab8, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00001abc, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00001a9c, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00001aa0, Max: 0x00080000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -1722,23 +1722,24 @@ Memory Map of the image
     0x080015c4   0x00000002   Code   RO          176    i.PendSV_Handler    stm32f1xx_it.o
     0x080015c6   0x00000002   PAD
     0x080015c8   0x00000028   Code   RO          863    i.RCC_Delay         stm32f1xx_hal_rcc.o
-    0x080015f0   0x00000020   Code   RO         2831    i.SPI_DELAY         io_spi.o
-    0x08001610   0x00000080   Code   RO         2832    i.SPI_Init          io_spi.o
-    0x08001690   0x00000078   Code   RO         2833    i.SPI_WRITE_READ_BYTE  io_spi.o
-    0x08001708   0x00000002   Code   RO          177    i.SVC_Handler       stm32f1xx_it.o
-    0x0800170a   0x00000008   Code   RO          178    i.SysTick_Handler   stm32f1xx_it.o
-    0x08001712   0x00000056   Code   RO            4    i.SystemClock_Config  main.o
-    0x08001768   0x00000058   Code   RO          247    i.SystemInit        system_stm32f1xx.o
-    0x080017c0   0x000001c8   Code   RO         2055    i.UART_SetConfig    stm32f1xx_hal_uart.o
-    0x08001988   0x00000024   Code   RO         2773    i.USART1_IRQHandler  usart.o
-    0x080019ac   0x0000004c   Code   RO         2774    i.USART_Init        usart.o
-    0x080019f8   0x00000004   Code   RO          179    i.UsageFault_Handler  stm32f1xx_it.o
-    0x080019fc   0x00000004   Code   RO         2775    i._sys_exit         usart.o
-    0x08001a00   0x00000020   Code   RO         2776    i.fputc             usart.o
-    0x08001a20   0x0000001c   Code   RO            5    i.main              main.o
-    0x08001a3c   0x00000018   Data   RO          248    .constdata          system_stm32f1xx.o
-    0x08001a54   0x00000028   Data   RO         3002    .constdata          c_w.l(_printf_hex_int.o)
-    0x08001a7c   0x00000020   Data   RO         3215    Region$$Table       anon$$obj.o
+    0x080015f0   0x00000022   Code   RO         2831    i.SPI_DELAY         io_spi.o
+    0x08001612   0x00000002   PAD
+    0x08001614   0x00000080   Code   RO         2832    i.SPI_Init          io_spi.o
+    0x08001694   0x00000078   Code   RO         2833    i.SPI_WRITE_READ_BYTE  io_spi.o
+    0x0800170c   0x00000002   Code   RO          177    i.SVC_Handler       stm32f1xx_it.o
+    0x0800170e   0x00000008   Code   RO          178    i.SysTick_Handler   stm32f1xx_it.o
+    0x08001716   0x00000056   Code   RO            4    i.SystemClock_Config  main.o
+    0x0800176c   0x00000058   Code   RO          247    i.SystemInit        system_stm32f1xx.o
+    0x080017c4   0x000001c8   Code   RO         2055    i.UART_SetConfig    stm32f1xx_hal_uart.o
+    0x0800198c   0x00000024   Code   RO         2773    i.USART1_IRQHandler  usart.o
+    0x080019b0   0x0000004c   Code   RO         2774    i.USART_Init        usart.o
+    0x080019fc   0x00000004   Code   RO          179    i.UsageFault_Handler  stm32f1xx_it.o
+    0x08001a00   0x00000004   Code   RO         2775    i._sys_exit         usart.o
+    0x08001a04   0x00000020   Code   RO         2776    i.fputc             usart.o
+    0x08001a24   0x0000001c   Code   RO            5    i.main              main.o
+    0x08001a40   0x00000018   Data   RO          248    .constdata          system_stm32f1xx.o
+    0x08001a58   0x00000028   Data   RO         3002    .constdata          c_w.l(_printf_hex_int.o)
+    0x08001a80   0x00000020   Data   RO         3215    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000026c0, Max: 0x00010000, ABSOLUTE)
@@ -1765,7 +1766,7 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       280         14          0          0          0       1905   io_spi.o
+       282         14          0          0          0       1925   io_spi.o
        114          0          0          0          0     449352   main.o
        926        144          0          4       8192       6723   mx25l8006e.o
         64         26        304          0       1536        792   startup_stm32f103xe.o
@@ -1780,9 +1781,9 @@ Image component sizes
        268         32          0          8         64       4225   usart.o
 
     ----------------------------------------------------------------------
-      5520        448        360         28       9792     511203   Object Totals
+      5524        448        360         28       9792     511223   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        10          0          0          3          0          0   (incl. Padding)
+        12          0          0          3          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1840,15 +1841,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6412        494        400         28       9892     509343   Grand Totals
-      6412        494        400         28       9892     509343   ELF Image Totals
-      6412        494        400         28          0          0   ROM Totals
+      6416        494        400         28       9892     509363   Grand Totals
+      6416        494        400         28       9892     509363   ELF Image Totals
+      6416        494        400         28          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 6812 (   6.65kB)
+    Total RO  Size (Code + RO Data)                 6816 (   6.66kB)
     Total RW  Size (RW Data + ZI Data)              9920 (   9.69kB)
-    Total ROM Size (Code + RO Data + RW Data)       6840 (   6.68kB)
+    Total ROM Size (Code + RO Data + RW Data)       6844 (   6.68kB)
 
 ==============================================================================
 
